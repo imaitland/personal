@@ -1,0 +1,88 @@
+.b612-regular {
+    font-family: "B612", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.b612-bold {
+    font-family: "B612", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.b612-regular-italic {
+    font-family: "B612", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.b612-bold-italic {
+    font-family: "B612", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.b612-mono-regular {
+    font-family: "B612 Mono", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.b612-mono-bold {
+    font-family: "B612 Mono", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.b612-mono-regular-italic {
+    font-family: "B612 Mono", serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.b612-mono-bold-italic {
+    font-family: "B612 Mono", serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.background {
+    background: #eee;
+    margin: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5rem;
+    border: 1px solid #888;
+    box-shadow: 2px 2px #ccc;
+    background: #fff;
+}
+
+.column {
+    flex: 1 1 50%;
+    /* Let each column take up half the container's width by default */
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+
+/* When the screen is smaller than 600px, each "column" should take full width (one per row) */
+@media (max-width: 1000px) {
+    .container {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    .avatar {
+        width: 100%;
+    }
+
+    .column {
+        flex: 1 1 100%;
+    }
+}
